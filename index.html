@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Incluye jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       
+    <title>Portafolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <img class="logo1" src="./assets/img/logo-blanco-transparente.png" alt="">
+            </div>
+            <nav id="nav" class="responsive"> 
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./assets/img/perfil1.png" alt="">
+            </div>
+            <div class="contenedor-texto">
+                <h1>ANGELINA MENDOZA</h1>
+                <h2>Estudiante de Ingeniería en Informática</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/antena19"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/antena19/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://cl.linkedin.com/in/angelina-mendoza-ya%C3%B1ez-607741290?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Antena19"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+        <h2>SOBRE MÍ</h2>
+        <p>
+            <span>Hola, soy Angelina Mendoza.</span> Estudiante de segundo año de Ingeniería en Informática en Duoc UC, sede Puerto Montt. Actualmente, estoy inmersa en el fascinante mundo de la programación web como parte de mi formación académica. Este portafolio es el resultado de mi aprendizaje y práctica en la asignatura de programación web, donde hemos abordado diversos proyectos pequeños que me han permitido explorar y aplicar los conceptos fundamentales del desarrollo web. A través de este espacio, te invito a conocer mi trayectoria, mis habilidades y algunos de los proyectos en los que he trabajado. ¡Bienvenido/a a mi mundo digital!
+        </p>
+        <div class="datos-personales">
+            <h3>DATOS PERSONALES</h3>
+            <ul>
+            <li><strong>Cumpleaños</strong> 07-10-1989</li>
+            <li><strong>Teléfono</strong> +56 9 98555466</li>
+            <li><strong>Email</strong> angelina.mendoza.y@gmail.com</li>
+            <li><strong>Website</strong> www.en-construccion.com</li>
+            <li><strong>Dirección</strong> Joseph Addison 2342, Portal Puerto Montt</li>
+            </ul>
+        </div>
+        <div class="intereses">
+            <h3>INTERESES</h3>
+            <div class="contenedor-intereses">
+            <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+            </div>
+            <div class="interes">
+                <i class="fa-solid fa-music"></i>
+                <span>MUSICA</span>
+            </div>
+            <div class="interes">
+                <i class="fa-solid fa-kitchen-set"></i>
+                <span>COCINAR</span>
+            </div>
+            <div class="interes">
+                <i class="fa-solid fa-mug-saucer"></i>
+                <span>CAFÉ</span>
+            </div>
+            <div class="interes">
+                <i class="fa-solid fa-palette"></i>
+                <span>PINTURA</span>
+            </div>
+            <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+            </div>
+            <div class="interes">
+                <i class="fa-brands fa-pagelines"></i>
+                <span>JARDINERÍA</span>
+            </div>
+            <div class="interes">
+                <i class="fa-solid fa-person-walking"></i>
+                <span>PASEAR</span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <li><h3>HTML</h3>
+                <span class="bar"><span class="html"></span></span>
+            </li>
+            <li><h3>CSS</h3>
+                <span class="bar"><span class="css"></span></span>
+            </li>
+            <li><h3>JAVASCRIPT</h3>
+                <span class="bar"><span class="javascript"></span></span>
+            </li>
+            <li><h3>PYTHON</h3>
+                <span class="bar"><span class="python"></span></span>
+            </li>
+            <li><h3>JAVA</h3>
+                <span class="bar"><span class="java"></span></span>
+            </li>
+        </div>   
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>CURRICULUM</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería en Informática</h4>
+                        <span class="casa">Duoc UC - Puerto Montt</span>
+                        <span class="fecha">2023 - Actualidad</span>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4>Kinesiología</h4>
+                        <span class="casa">Universidad Autónoma - Temuco</span>
+                        <span class="fecha">2008 - 2014</span>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto" onclick="openModal('modal1')">
+                    <img src="./assets/img/foto1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>API CLIMA</h3>
+                        <p>Proyecto</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="openModal('modal2')">
+                    <img src="./assets/img/foto2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>JUEGO DINOSAURIO</h3>
+                        <p>Proyecto</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="openModal('modal3')">
+                    <img src="./assets/img/fondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>SOFTWARE DE ESCRITORIO</h3>
+                        <p>Proyecto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modales -->
+        <div id="modal1" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="closeModal('modal1')">&times;</span>
+                <h2>API CLIMA</h2>
+                <div class="modal-info">
+                    <div class="contenedor-imagen">
+                        <img src="./assets/img/api-clima.png" alt="Imagen 1">
+                    </div>
+                    <div class="descripcion">
+                        <p>La API de Pronóstico del Tiempo es una aplicación web que permite a los usuarios obtener información meteorológica actualizada para cualquier ciudad del mundo. Utilizando la API de OpenWeatherMap, esta aplicación proporciona datos precisos sobre la temperatura actual, la sensación térmica, la humedad y la descripción del clima para una ciudad específica. La interfaz de usuario está diseñada con colores celestes para crear una experiencia visualmente atractiva y fácil de usar. Esta aplicación es útil para cualquier persona que necesite conocer el clima de una ubicación específica en tiempo real.</p>
+                        <p>Herramientas utilizadas: HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+                <div class="icono-github">
+                    <h4 class="h4-modal">Ir al repositorio --> </h4>
+                    <a href="https://github.com/Antena19/API-CLIMA.git"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="closeModal('modal2')">&times;</span>
+                <h2>Juego Dinosaurio</h2>
+                <div class="modal-info">
+                    <div class="contenedor-imagen">
+                        <img src="./assets/img/dino.png" alt="Imagen 2">
+                    </div>
+                    <div class="descripcion">
+                        <p>Juego del dinosaurio utilizando HTML, CSS y JavaScript como parte de una actividad para la asignatura de Programación Web. El juego ofrece una experiencia adictiva donde el jugador controla un dinosaurio para esquivar obstáculos y alcanzar la mayor distancia posible. Con gráficos atractivos y controles simples, el juego demuestra mi habilidad para crear experiencias interactivas utilizando tecnologías web modernas.</p>
+                        <p>Herramientas utilizadas: HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+                <div class="icono-github">
+                    <h4 class="h4-modal">Ir al repositorio --> </h4>
+                    <a href="https://github.com/Antena19"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="closeModal('modal3')">&times;</span>
+                <h2>Software de Escritorio</h2>
+                <div class="modal-info">
+                    <div class="contenedor-imagen">
+                        <img src="./assets/img/inventario.png" alt="Imagen 3">
+                    </div>
+                    <div class="descripcion">
+                        <p>Sistema de inventario para el casino de Duoc UC utilizando Java y el patrón de diseño MVC (Modelo-Vista-Controlador). Este sistema se implementó en un entorno de desarrollo integrado Apache NetBeans y se conectó a una base de datos MySQL a través de MySQL Workbench.
+                            
+                            La interfaz gráfica del sistema está construida con Java Swing, con un JFrame principal que presenta un formulario único. Este formulario permite realizar diversas operaciones en la tabla de inventario.
+                            
+                            El sistema ofrece las siguientes funcionalidades:
+                            
+                            1. Agregar Producto: Permite registrar nuevos productos con validaciones integradas para evitar inconsistencias en los datos.
+                            
+                            2. Modificar Producto: Permite buscar y actualizar productos existentes en la base de datos.
+                            
+                            3. Eliminar Producto: Permite eliminar un producto después de solicitar confirmación al usuario.
+                            
+                            4. Listar Productos: Presenta todos los productos en un JTable, con la capacidad de filtrar por categoría para una fácil búsqueda.
+                            
+                            El diseño del sistema sigue el patrón de diseño MVC, separando claramente la lógica de negocio (Modelo), la presentación de datos (Vista) y el control de las interacciones del usuario (Controlador). Esta arquitectura facilita el mantenimiento y la escalabilidad del sistema.
+                            
+                            El sistema ha sido desarrollado con Java orientado a objetos, haciendo uso de las mejores prácticas de programación para garantizar la eficiencia y la robustez del código.</p>
+                        
+                    </div>
+                </div>
+                <div class="icono-github">
+                    <h4 class="h4-modal">Ir al repositorio --> </h4>
+                    <a href="https://github.com/Antena19"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <!-- Formulario -->
+            <div class="col">
+                <form id="formulario" action="https://formsubmit.co/angelina.mendoza.y@gmail.com" method="POST">
+                    <input type="text" id="nombre" name="name" placeholder="Nombre" required>
+                    <input type="email" id="correo" name="email" placeholder="Correo" required>
+                    <textarea id="mensaje" name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="submit" id="enviar-mensaje" class="btn btn-msg">Enviar Mensaje</button>
+                </form>
+            </div>                               
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        
+        <div class="logo-pie-pagina">
+            <img src="./assets/img/logo-blanco-transparente.png" alt="">
+        </div>
+        <p class="parrafo-footer">Portafolio 2024</p>
+    </footer>
+
+    <!-- SCRIPT FUNCIONALIDAD -->
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
